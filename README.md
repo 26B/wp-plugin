@@ -8,7 +8,7 @@ We aim to deliver a focus on the API features of WordPress and it's eventual use
 
 This project is a skeleton, so it has a bunch of keys that need to be replaced with values specific to your project.
 
-For these changes should be done with the Find&Replace feature of your editor. later there will be more options to do so. Below you can find the table with the keys and their respective description, along with an example for the possible value.
+For these changes, you should use the "Find and Replace" feature of your editor. Later there will be more options to this. Below you can find the table with the keys and their respective description, along with an example for the possible value.
 
 | Key                      | Description                                                         | Example value |
 | ------------------------ | ------------------------------------------------------------------- | ------------- |
