@@ -11,7 +11,7 @@
  * @link [plugin_url]
  *
  * @package [vendor_name]
- * @since   [plugin_initial_version]
+ * @since   [initial_version]
  *
  * @wordpress-plugin
  * Plugin Name: [plugin_name]
@@ -50,9 +50,9 @@ if ( ! defined( 'WPINC' ) ) {
 /**
  * Begins execution of the plugin.
  *
- * @since [plugin_initial_version]
+ * @since [initial_version]
  */
 \add_action( 'plugins_loaded', function () {
-	$plugin = new [namespace]\Plugin( '[text_domain]', '[plugin_initial_version]' );
+	$plugin = new [namespace]\Plugin( '[text_domain]', '[initial_version]' );
 	$plugin->run();
 } );

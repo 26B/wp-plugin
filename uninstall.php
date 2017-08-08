@@ -17,7 +17,7 @@
  * this is the general skeleton and outline for how the file should work.
  *
  * @link    [plugin_url]
- * @since   [plugin_initial_version]
+ * @since   [initial_version]
  * @package [vendor_name]
  */
 

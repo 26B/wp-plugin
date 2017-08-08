@@ -6,7 +6,7 @@
  * @link [plugin_url]
  *
  * @package [vendor_name]
- * @since   [plugin_initial_version]
+ * @since   [initial_version]
  */
 
 namespace [namespace];
@@ -16,7 +16,7 @@ namespace [namespace];
  *
  * This class defines all code necessary to run during the plugin's deactivation.
  *
- * @since [plugin_initial_version]
+ * @since [initial_version]
  */
 class Deactivator {
 
@@ -25,7 +25,7 @@ class Deactivator {
 	 *
 	 * Description. (use period)
 	 *
-	 * @since [plugin_initial_version]
+	 * @since [initial_version]
 	 */
 	public static function deactivate() {
 

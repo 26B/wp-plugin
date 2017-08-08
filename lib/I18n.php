@@ -9,7 +9,7 @@
  * @link [plugin_url]
  *
  * @package [vendor_name]
- * @since   [plugin_initial_version]
+ * @since   [initial_version]
  */
 
 namespace [namespace];
@@ -20,14 +20,14 @@ namespace [namespace];
  * Loads and defines the internationalization files for this plugin
  * so that it is ready for translation.
  *
- * @since [plugin_initial_version]
+ * @since [initial_version]
  */
 class I18n {
 
 	/**
 	 * The domain specified for this plugin.
 	 *
-	 * @since  [plugin_initial_version]
+	 * @since  [initial_version]
 	 * @access private
 	 * @var    string $domain The domain identifier for this plugin.
 	 */
@@ -36,7 +36,7 @@ class I18n {
 	/**
 	 * Load the plugin text domain for translation.
 	 *
-	 * @since [plugin_initial_version]
+	 * @since [initial_version]
 	 */
 	public function load_plugin_textdomain() {
 		\load_plugin_textdomain(
@@ -49,7 +49,7 @@ class I18n {
 	/**
 	 * Set the domain equal to that of the specified domain.
 	 *
-	 * @since [plugin_initial_version]
+	 * @since [initial_version]
 	 *
 	 * @param string $domain The domain that represents the locale of this plugin.
 	 */

@@ -9,7 +9,7 @@
  * @link [plugin_url]
  *
  * @package [vendor_name]
- * @since   [plugin_initial_version]
+ * @since   [initial_version]
  */
 
 namespace [namespace];
@@ -23,14 +23,14 @@ namespace [namespace];
  * Also maintains the unique identifier of this plugin as well as the current
  * version of the plugin.
  *
- * @since [plugin_initial_version]
+ * @since [initial_version]
  */
 class Plugin {
 
 	/**
 	 * The unique identifier of this plugin.
 	 *
-	 * @since  [plugin_initial_version]
+	 * @since  [initial_version]
 	 * @access protected
 	 * @var    string $pluginname The string used to uniquely identify this
 	 *                            plugin.
@@ -40,7 +40,7 @@ class Plugin {
 	/**
 	 * The current version of the plugin.
 	 *
-	 * @since  [plugin_initial_version]
+	 * @since  [initial_version]
 	 * @access protected
 	 * @var    string $version The current version of the plugin.
 	 */
@@ -52,7 +52,7 @@ class Plugin {
 	 * Create an instance of the loader which will be used to register the hooks
 	 * with WordPress.
 	 *
-	 * @since [plugin_initial_version]
+	 * @since [initial_version]
 	 *
 	 * @param string $name    The plugin identifier.
 	 * @param string $version Current version of the plugin.
@@ -68,7 +68,7 @@ class Plugin {
 	 * Load the dependencies, define the locale, and set the hooks for the
 	 * Dashboard and the public-facing side of the site.
 	 *
-	 * @since [plugin_initial_version]
+	 * @since [initial_version]
 	 */
 	public function run() {
 		$this->set_locale();
@@ -78,7 +78,7 @@ class Plugin {
 	 * The name of the plugin used to uniquely identify it within the context of
 	 * WordPress and to define internationalization functionality.
 	 *
-	 * @since [plugin_initial_version]
+	 * @since [initial_version]
 	 *
 	 * @return string The name of the plugin.
 	 */
@@ -89,7 +89,7 @@ class Plugin {
 	/**
 	 * Returns the version number of the plugin.
 	 *
-	 * @since [plugin_initial_version]
+	 * @since [initial_version]
 	 *
 	 * @return string The version number of the plugin.
 	 */
@@ -103,7 +103,7 @@ class Plugin {
 	 * Uses the I18n class in order to set the domain and to register the hook
 	 * with WordPress.
 	 *
-	 * @since  [plugin_initial_version]
+	 * @since  [initial_version]
 	 * @access private
 	 */
 	private function set_locale() {
