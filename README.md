@@ -6,6 +6,8 @@ We aim to deliver a focus on the API features of WordPress and it's eventual use
 
 ## Getting started
 
+### Find and Replace
+
 This project is a skeleton, so it has a bunch of keys that need to be replaced with values specific to your project.
 
 For these changes, you should use the "Find and Replace" feature of your editor. Later there will be more options to this. Below you can find the table with the keys and their respective description, along with an example for the possible value.
@@ -31,3 +33,7 @@ For these changes, you should use the "Find and Replace" feature of your editor.
 [3]: https://getcomposer.org/doc/04-schema.md#psr-4
 
 For further information on writing WordPress plugins refer to the [official documentation](https://developer.wordpress.org/plugins/).
+
+### Run composer
+
+After all of the changes don't forget to run `composer install` to have the dependencies load and the autoload built. (Without this your plugin will break.)
