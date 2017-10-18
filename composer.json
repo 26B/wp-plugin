@@ -14,10 +14,6 @@
     "10up/wp_mock": "@dev"
   },
   "authors": [],
-  "support": {
-    "issues": "",
-    "source": ""
-  },
   "autoload": {
     "psr-4": {
       "[autoload_psr_4]": "lib/"
