@@ -31,6 +31,9 @@ dwsync.xml
 
 # Package management
 vendor/
+node_modules/
+package-lock.json
+yarn.lock
 
 # Folders to ignore
 .hg
