@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<ruleset name="wp-seed-plugin">
+<ruleset name="WP-Seed">
   <description>WP-Seed standards for WordPress.</description>
 
   <exclude-pattern>*/phpunit.xml*</exclude-pattern>
