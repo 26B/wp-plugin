@@ -60,6 +60,7 @@ class Plugin {
 	 */
 	public function run() {
 		$this->set_locale();
+		$this->define_admin_hooks();
 	}
 
 	/**
@@ -96,5 +97,23 @@ class Plugin {
 		$i18n = new I18n();
 		$i18n->set_domain( $this->get_plugin_name() );
 		$i18n->load_plugin_textdomain();
+	}
+
+	/**
+	 * Register all of the hooks related to the dashboard functionality
+	 * of the plugin.
+	 *
+	 * @since  [initial_version]
+	 * @access private
+	 */
+	private function define_admin_hooks() {
+
+		$components = array(
+			'admin' => new Admin( $this ),
+		);
+
+		foreach ( $components as $component ) {
+			$component->register();
+		}
 	}
 }
