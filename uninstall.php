@@ -2,9 +2,6 @@
 /**
  * Fired when the plugin is uninstalled
  *
- * This file may be updated more in future version of the Boilerplate; however,
- * this is the general skeleton and outline for how the file should work.
- *
  * @since   [initial_version]
  * @package [vendor_name]
  */

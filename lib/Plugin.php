@@ -70,7 +70,7 @@ class Plugin {
 	 * @since  [initial_version]
 	 * @return string The name of the plugin.
 	 */
-	public function get_plugin_name() {
+	public function get_name() {
 		return $this->name;
 	}
 
@@ -95,7 +95,7 @@ class Plugin {
 	 */
 	private function set_locale() {
 		$i18n = new I18n();
-		$i18n->set_domain( $this->get_plugin_name() );
+		$i18n->set_domain( $this->get_name() );
 		$i18n->load_plugin_textdomain();
 	}
 
@@ -108,9 +108,9 @@ class Plugin {
 	 */
 	private function define_admin_hooks() {
 
-		$components = array(
+		$components = [
 			'admin' => new Admin( $this ),
-		);
+		];
 
 		foreach ( $components as $component ) {
 			$component->register();

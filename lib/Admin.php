@@ -5,9 +5,6 @@ namespace [namespace];
 /**
  * The dashboard-specific functionality of the plugin
  *
- * Defines the plugin name, version, and two examples hooks for how to
- * enqueue the dashboard-specific stylesheet and JavaScript.
- *
  * @package [vendor_name]
  * @since   [initial_version]
  */
@@ -38,7 +35,7 @@ class Admin {
 	 * @since [initial_version]
 	 */
 	public function register() {
-		\add_action( 'admin_init', array( $this, 'action_callback' ) );
+		\add_action( 'admin_init', [ $this, 'action_callback' ] );
 	}
 
 	/**
@@ -47,6 +44,5 @@ class Admin {
 	 * @since  [initial_version]
 	 * @return void
 	 */
-	public function action_callback() {
-	}
+	public function action_callback() {}
 }

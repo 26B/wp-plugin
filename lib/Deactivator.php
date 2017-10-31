@@ -16,16 +16,17 @@ class Deactivator {
 	 * Deactivation handler.
 	 *
 	 * @since [initial_version]
-	 * @param bool network_wide True if WPMU superadmin uses "Network Deactivate" action,
-	 *                          false if WPMU is disabled or plugin is deactivated on an
-	 *                          individual blog.
+	 * @param bool $network_wide True if WPMU superadmin uses "Network Deactivate" action,
+	 *                           false if WPMU is disabled or plugin is deactivated on an
+	 *                           individual blog.
 	 */
 	public static function deactivate( $network_wide = false ) {
+
 		if ( $network_wide && \is_multisite() ) {
 
-			$sites = \get_sites( array(
+			$sites = \get_sites( [
 				'number' => false,
-			) );
+			] );
 
 			foreach ( $sites as $site ) {
 				\switch_to_blog( $site['blog_id'] );
