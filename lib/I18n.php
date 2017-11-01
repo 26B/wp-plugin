@@ -1,17 +1,5 @@
 <?php
 
-/**
- * Define the internationalization functionality
- *
- * Loads and defines the internationalization files for this plugin
- * so that it is ready for translation.
- *
- * @link [plugin_url]
- *
- * @package [vendor_name]
- * @since   [initial_version]
- */
-
 namespace [namespace];
 
 /**
@@ -20,7 +8,8 @@ namespace [namespace];
  * Loads and defines the internationalization files for this plugin
  * so that it is ready for translation.
  *
- * @since [initial_version]
+ * @package [vendor_name]
+ * @since   [initial_version]
  */
 class I18n {
 

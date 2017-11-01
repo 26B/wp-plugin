@@ -1,17 +1,5 @@
 <?php
 
-/**
- * The file that defines the core plugin class
- *
- * A class definition that includes attributes and functions used across both
- * the public-facing side of the site and the dashboard.
- *
- * @link [plugin_url]
- *
- * @package [vendor_name]
- * @since   [initial_version]
- */
-
 namespace [namespace];
 
 /**
@@ -23,7 +11,8 @@ namespace [namespace];
  * Also maintains the unique identifier of this plugin as well as the current
  * version of the plugin.
  *
- * @since [initial_version]
+ * @package [vendor_name]
+ * @since   [initial_version]
  */
 class Plugin {
 
@@ -32,8 +21,8 @@ class Plugin {
 	 *
 	 * @since  [initial_version]
 	 * @access protected
-	 * @var    string $pluginname The string used to uniquely identify this
-	 *                            plugin.
+	 * @var    string $name The string used to uniquely identify this
+	 *                      plugin.
 	 */
 	protected $name;
 
@@ -53,7 +42,6 @@ class Plugin {
 	 * with WordPress.
 	 *
 	 * @since [initial_version]
-	 *
 	 * @param string $name    The plugin identifier.
 	 * @param string $version Current version of the plugin.
 	 */
@@ -72,25 +60,24 @@ class Plugin {
 	 */
 	public function run() {
 		$this->set_locale();
+		$this->define_admin_hooks();
 	}
 
 	/**
 	 * The name of the plugin used to uniquely identify it within the context of
 	 * WordPress and to define internationalization functionality.
 	 *
-	 * @since [initial_version]
-	 *
+	 * @since  [initial_version]
 	 * @return string The name of the plugin.
 	 */
-	public function get_plugin_name() {
+	public function get_name() {
 		return $this->name;
 	}
 
 	/**
 	 * Returns the version number of the plugin.
 	 *
-	 * @since [initial_version]
-	 *
+	 * @since  [initial_version]
 	 * @return string The version number of the plugin.
 	 */
 	public function get_version() {
@@ -107,8 +94,26 @@ class Plugin {
 	 * @access private
 	 */
 	private function set_locale() {
-		$plugin_i18n = new I18n();
-		$plugin_i18n->set_domain( $this->get_plugin_name() );
-		$plugin_i18n->load_plugin_textdomain();
+		$i18n = new I18n();
+		$i18n->set_domain( $this->get_name() );
+		$i18n->load_plugin_textdomain();
+	}
+
+	/**
+	 * Register all of the hooks related to the dashboard functionality
+	 * of the plugin.
+	 *
+	 * @since  [initial_version]
+	 * @access private
+	 */
+	private function define_admin_hooks() {
+
+		$components = [
+			'admin' => new Admin( $this ),
+		];
+
+		foreach ( $components as $component ) {
+			$component->register();
+		}
 	}
 }
