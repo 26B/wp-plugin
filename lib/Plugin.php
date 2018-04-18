@@ -21,8 +21,7 @@ class Plugin {
 	 *
 	 * @since  [initial_version]
 	 * @access protected
-	 * @var    string $name The string used to uniquely identify this
-	 *                      plugin.
+	 * @var    string $name
 	 */
 	protected $name;
 
@@ -31,15 +30,12 @@ class Plugin {
 	 *
 	 * @since  [initial_version]
 	 * @access protected
-	 * @var    string $version The current version of the plugin.
+	 * @var    string $version
 	 */
 	protected $version;
 
 	/**
 	 * Define the core functionality of the plugin.
-	 *
-	 * Create an instance of the loader which will be used to register the hooks
-	 * with WordPress.
 	 *
 	 * @since [initial_version]
 	 * @param string $name    The plugin identifier.
