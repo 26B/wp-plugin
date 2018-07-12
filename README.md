@@ -1,4 +1,4 @@
-# WP Seed Plugin
+# WP-Plugin
 
 All you need to start creating a plugin for WordPress.
 
@@ -12,21 +12,21 @@ This project is a skeleton, so it has a bunch of keys that need to be replaced w
 
 For these changes, you should use the "Find and Replace" feature of your editor. Later there will be more options to this. Below you can find the table with the keys and their respective description, along with an example for the possible value.
 
-| Key                      | Description                                                         | Example value |
-| ------------------------ | ------------------------------------------------------------------- | ------------- |
-| `[vendor_name]`          | Your username or company name: no spaces                            | `WPSeed` |
-| `[plugin_name]`          | See ["Planning Your Plugin – Pick a good name"][1] ([more info][2]) | `WP Seed Plugin` |
-| `[plugin_description]`   | Description for the plugin ([more info][2])                         | `A WordPress Plugin starter for budding features.` |
-| `[plugin_url]`           | Plugin URL ([more info][2])                                         | `https://github.com/xipasduarte/wp-seed-plugin` |
-| `[initial_version]`      | Version to start the plugin with ([more info][2])                   | `1.0.0`|
-| `[author_name]`          | Author name ([more info][2])                                        | `Pedro Duarte` |
-| `[author_url]`           | Author URL ([more info][2])                                         | `https://github.com/xipasduarte` |
-| `[text_domain]`          | Text domain ([more info][2])                                        | `wp-seed-plugin` |
-| `[composer_vendor]`      | Your username, company or project name: lowercase and no spaces     | `wp-seed` |
-| `[composer_name]`        | Plugin identifier: usually the `[plugin_name]` in dash-case         | `wp-seed-plugin` |
-| `[namespace]`            | Desired PHP namespace                                               | `WPSeed\WP\Plugin\WPSeedPlugin` |
-| `[autoload_psr_4]`       | [PSR-4 autoload][3] for `[namespace]`                               | `WPSeed\\WP\\Plugin\\WPSeedPlugin\\` |
-| `[autoload_tests_psr_4]` | [PSR-4 autoload][3] for `[namespace_tests]`                         | `WPSeed\\WP\\Plugin\\WPSeedPlugin\\Tests\\` |
+| Key                      | Description                                                         | Example value                         |
+| ------------------------ | ------------------------------------------------------------------- | ------------------------------------- |
+| `[vendor_name]`          | Your username or company name: no spaces                            | `26B`                                 |
+| `[plugin_name]`          | See ["Planning Your Plugin – Pick a good name"][1] ([more info][2]) | `Foo Bar`                             |
+| `[plugin_description]`   | Description for the plugin ([more info][2])                         | `A WordPress plugin starter.`         |
+| `[plugin_url]`           | Plugin URL ([more info][2])                                         | `https://github.com/26B/wp-plugin`    |
+| `[initial_version]`      | Version to start the plugin with ([more info][2])                   | `1.0.0`                               |
+| `[author_name]`          | Author name ([more info][2])                                        | `Pedro Duarte`                        |
+| `[author_url]`           | Author URL ([more info][2])                                         | `https://github.com/xipasduarte`      |
+| `[text_domain]`          | Text domain ([more info][2])                                        | `foo-bar`                             |
+| `[composer_vendor]`      | Your username, company or project name: lowercase and no spaces     | `26b`                                 |
+| `[composer_name]`        | Plugin identifier: usually the `[plugin_name]` in dash-case          | `foo-bar`                             |
+| `[namespace]`            | Desired PHP namespace                                               | `26B\WP\Plugin\FooBar`                |
+| `[autoload_psr_4]`       | [PSR-4 autoload][3] for `[namespace]`                               | `26B\\WP\\Plugin\\FooBar\\`           |
+| `[autoload_tests_psr_4]` | [PSR-4 autoload][3] for `[namespace_tests]`                         | `26B\\WP\\Plugin\\FooBar\\Tests\\`    |
 
 [1]: https://developer.wordpress.org/plugins/wordpress-org/planning-your-plugin/#2-pick-a-good-name
 [2]: https://developer.wordpress.org/plugins/the-basics/header-requirements/

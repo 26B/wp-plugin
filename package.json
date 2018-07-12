@@ -1,9 +1,23 @@
 {
-  "name": "wp-seed-plugin",
+  "name": "wp-plugin",
   "version": "1.0.0",
-  "description": "A WordPress Plugin starter for budding features.",
+  "description": "A WordPress plugin starter.",
   "license": "See license in LICENSE",
-  "repository": "git@github.com:WP-Seed/wp-seed-plugin.git",
+  "repository": "git@github.com:26B/wp-plugin.git",
+  "authors": [
+    {
+      "name": "Pedro Duarte",
+      "email": "xipasduarte@gmail.com"
+    },
+    {
+      "name": "Sérgio Santos",
+      "email": "me@s3rgiosan.com",
+      "homepage": "https://s3rgiosan.com"
+    }
+  ],
   "devDependencies": {},
-  "dependencies": {}
+  "dependencies": {},
+  "eslintConfig": {
+    "extends": "eslint:recommended"
+  }
 }

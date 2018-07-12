@@ -2,7 +2,10 @@
   "name": "[composer_vendor]/[composer_name]",
   "description": "[plugin_description]",
   "type": "wordpress-plugin",
-  "keywords": ["wordpress", "plugin"],
+  "keywords": [
+    "wordpress",
+    "plugin"
+  ],
   "homepage": "[plugin_url]",
   "license": "GPL-2.0+",
   "require": {
