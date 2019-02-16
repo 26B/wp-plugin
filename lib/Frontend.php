@@ -5,8 +5,7 @@ namespace [namespace];
 /**
  * The public-facing functionality of the plugin.
  *
- * @package [vendor_name]
- * @since   [initial_version]
+ * @since [initial_version]
  */
 class Frontend {
 
