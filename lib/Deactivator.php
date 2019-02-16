@@ -7,8 +7,7 @@ namespace [namespace];
  *
  * This class defines all code necessary to run during the plugin's deactivation.
  *
- * @package [vendor_name]
- * @since   [initial_version]
+ * @since [initial_version]
  */
 class Deactivator {
 
