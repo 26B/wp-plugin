@@ -7,7 +7,7 @@ namespace [namespace];
  *
  * This class defines all code necessary to run during the plugin's activation.
  *
- * @since   [initial_version]
+ * @since [initial_version]
  */
 class Activator {
 
