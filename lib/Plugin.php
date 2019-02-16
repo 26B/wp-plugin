@@ -11,8 +11,7 @@ namespace [namespace];
  * Also maintains the unique identifier of this plugin as well as the current
  * version of the plugin.
  *
- * @package [vendor_name]
- * @since   [initial_version]
+ * @since [initial_version]
  */
 class Plugin {
 
