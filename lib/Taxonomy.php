@@ -5,8 +5,7 @@ namespace [namespace];
 /**
  * Taxonomy handler.
  *
- * @package [vendor_name]
- * @since   [initial_version]
+ * @since [initial_version]
  */
 abstract class Taxonomy {
 

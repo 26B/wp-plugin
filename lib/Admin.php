@@ -5,8 +5,7 @@ namespace [namespace];
 /**
  * The dashboard-specific functionality of the plugin
  *
- * @package [vendor_name]
- * @since   [initial_version]
+ * @since [initial_version]
  */
 class Admin {
 

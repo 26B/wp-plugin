@@ -8,8 +8,7 @@ namespace [namespace];
  * Loads and defines the internationalization files for this plugin
  * so that it is ready for translation.
  *
- * @package [vendor_name]
- * @since   [initial_version]
+ * @since [initial_version]
  */
 class I18n {
 
