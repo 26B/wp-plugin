@@ -18,7 +18,7 @@ class I18n {
 	 *
 	 * @since  [initial_version]
 	 * @access private
-	 * @var    string $domain The domain identifier for this plugin.
+	 * @var    string
 	 */
 	private $domain;
 

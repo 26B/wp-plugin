@@ -21,7 +21,7 @@ class Plugin {
 	 *
 	 * @since  [initial_version]
 	 * @access protected
-	 * @var    string $name
+	 * @var    string
 	 */
 	protected $name;
 
@@ -30,7 +30,7 @@ class Plugin {
 	 *
 	 * @since  [initial_version]
 	 * @access protected
-	 * @var    string $version
+	 * @var    string
 	 */
 	protected $version;
 
